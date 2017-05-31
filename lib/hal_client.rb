@@ -21,6 +21,7 @@ class HalClient
   autoload :HttpError, 'hal_client/errors'
   autoload :HttpClientError, 'hal_client/errors'
   autoload :HttpServerError, 'hal_client/errors'
+  autoload :UserAgent, 'hal_client/user_agent'
 
   autoload :RepresentationEditor, 'hal_client/representation_editor'
 

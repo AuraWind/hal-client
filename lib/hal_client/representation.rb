@@ -36,11 +36,8 @@ class HalClient
     #   :parsed_json - A hash structure representing a single HAL
     #     document.
     #   :href - The href of this representation.
-    #   :hal_client - The HalClient instance to use when navigating.
     def initialize(options)
-      @hal_client = options[:hal_client]
       @href = options[:href]
-
       interpret options[:parsed_json] if options[:parsed_json]
 
       (fail ArgumentError, "Either parsed_json or href must be provided") if
